@@ -1,0 +1,31 @@
+Install HIDS on Linux
+
+First install ossec on your ubuntu and then add to ossim as an agent
+Ubuntu 
+
+# Add Apt sources.lst
+wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
+
+# Update apt data
+sudo apt-get update
+
+# Server
+sudo apt-get install ossec-hids-server
+
+# Agent
+sudo apt-get install ossec-hids-agent
+
+
+After successfully installed the HIDS agent on the Linux host
+perform the steps below to connect it to the OSSIM Appliance. 
+To add the HIDS agent to OSSIM
+
+1.	Go to Environment > Detection.
+2.	Go to HIDS > Agents > Agent Control > Add Agent. 
+3.	On New HIDS Agent, select the host from the asset tree. 
+OSSIM  populates Agent Name with the host name, and IP/CIDR with the host IP address automatically.
+4.	Click Save.
+
+	OSSIM adds the new agent to the list. 
+5.	Login to the Linux host,
+	 run /var/ossec/bin/manage_agents, and then enter I to import the key you copied in the previous step. 
