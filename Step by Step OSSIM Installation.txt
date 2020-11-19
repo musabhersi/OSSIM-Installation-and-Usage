@@ -1,0 +1,31 @@
+OSSIM Installation 
+Download an iso from AlienVault website and install in a VM on the VirtualBox. For your OSSIM to run smoothly I suggest at least 2 processors and 4GB RAM. But it can run with at least 2GB of RAM.
+You also need a management IP and Asset Network, you can also have as much as networks you want to monitor, for our lab we will have four interfaces, one management and three other networks to monitor.
+When OSSIM VM boots with image, you will see two options at start. For OSSIM installation I selected the first one.
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+Once logged in 
+Configure asset network ip 
+ 
+Mask 
+ 
+Configure other two networks you want to monitor 
+ 
+Now you can apply changes 
+
+ 
+And exit
+
+
+
